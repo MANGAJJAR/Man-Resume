@@ -37,13 +37,13 @@ const Contact = () => {
     >
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-navy/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
         <h2 className="text-sm font-bold uppercase tracking-widest text-slate-lightest lg:sr-only">
-          Let's Connect
+          Let&apos;s Connect
         </h2>
       </div>
 
       <div className="mb-12">
         <h2 className="text-3xl font-bold tracking-tight text-slate-lightest sm:text-4xl mb-4">
-          Let's Connect
+          Let&apos;s Connect
         </h2>
         <p className="text-slate max-w-2xl">
           Have a project in mind or just want to say hi? Feel free to reach out.
@@ -62,7 +62,7 @@ const Contact = () => {
               <FiCheckCircle className="w-10 h-10 text-teal mx-auto mb-4" />
               <h4 className="text-xl font-bold text-slate-lightest mb-2">Message Sent!</h4>
               <p className="text-slate text-xs mb-6 leading-relaxed max-w-[200px] mx-auto">
-                Thank you for reaching out. I'll get back to you as soon as possible.
+                Thank you for reaching out. I&apos;ll get back to you as soon as possible.
               </p>
               <button 
                 onClick={() => setStatus('')}

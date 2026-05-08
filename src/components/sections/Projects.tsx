@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { portfolioData } from '@/data';
 import { FiArrowUpRight } from 'react-icons/fi';
 import ProjectModal from '../ProjectModal';
@@ -52,8 +53,13 @@ const Projects = () => {
                   </ul>
                 </div>
                 {/* Image Placeholder or actual image */}
-                <div className="z-10 sm:order-1 sm:col-span-2 rounded border-2 border-slate/10 transition group-hover:border-slate/30 sm:mt-1 overflow-hidden">
-                   <img src={project.image} alt={project.name} className="w-full aspect-video object-cover bg-navy-lightest" />
+                <div className="z-10 sm:order-1 sm:col-span-2 rounded border-2 border-slate/10 transition group-hover:border-slate/30 sm:mt-1 overflow-hidden relative aspect-video">
+                   <Image 
+                     src={project.image} 
+                     alt={project.name} 
+                     fill
+                     className="object-cover bg-navy-lightest" 
+                   />
                 </div>
               </div>
             </li>
